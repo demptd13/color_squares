@@ -6,7 +6,6 @@ for (i = 0; i < textArray.length; i++) {
   title[i].textContent += String(textArray[i]);
   title[i].style.color = color;
   title[i].style.textShadow = "1px 1px 1px" + color;
-  title[5].style.marginLeft = "40px";
 }
 
 let allSquares = document.querySelectorAll(".square");
