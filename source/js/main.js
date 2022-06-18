@@ -15,6 +15,7 @@ for (i = 0; i < allSquares.length; i++) {
     let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
     this.style.backgroundColor = color;
     this.style.border = "1px solid" + color;
+    this.style.transition = "none";
   }
   allSquares[i].onmouseout = function () {
     this.style.backgroundColor = "transparent";
