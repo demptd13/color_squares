@@ -55,6 +55,13 @@ for (i = 0; i < allSquares.length; i++) {
     this.style.boxShadow = "0 0 10px" + color;
     this.style.transition = "none";
   }
+  allSquares[i].touchmove = function mouseOver() {
+    let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    this.style.backgroundColor = color;
+    this.style.border = "1px solid" + color;
+    this.style.boxShadow = "0 0 10px" + color;
+    this.style.transition = "none";
+  }
   allSquares[i].touchend = function mouseOut() {
     this.style.backgroundColor = "transparent";
     this.style.border = "1px solid rgb(54, 54, 54)";
