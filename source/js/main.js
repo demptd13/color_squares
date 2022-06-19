@@ -1,3 +1,22 @@
+let squareBlock = document.querySelector(".squares__block")
+let totalSquares = 1664;
+
+for (i = 0; i < totalSquares; i++) {
+  squareBlock.insertAdjacentHTML("afterbegin", `<div class="square"></div>`)
+}
+
+let titleBlock = document.querySelector(".header__title");
+let totalLetters = 13;
+
+for (i = 0; i < totalLetters; i++) {
+  if (i < 6) {
+    titleBlock.firstElementChild.insertAdjacentHTML("afterbegin", `<span></span>`)
+  }
+  else {
+    titleBlock.lastElementChild.insertAdjacentHTML("afterbegin", `<span></span>`)
+  }
+}
+
 let title = document.querySelectorAll("span");
 let textArray = Array.from("COLOR SQUARES");
 
@@ -25,4 +44,5 @@ for (i = 0; i < allSquares.length; i++) {
     this.style.boxShadow = "none";
   };
 }
+
 
