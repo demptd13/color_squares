@@ -1,12 +1,12 @@
-let squareBlock = document.querySelector(".squares__block")
-let totalSquares = 1664;
+const squareBlock = document.querySelector(".squares__block")
+const totalSquares = 1664;
 
 for (i = 0; i < totalSquares; i++) {
   squareBlock.insertAdjacentHTML("afterbegin", `<div class="square"></div>`)
 }
 
-let titleBlock = document.querySelector(".header__title");
-let totalLetters = 13;
+const titleBlock = document.querySelector(".header__title");
+const totalLetters = 13;
 
 for (i = 0; i < totalLetters; i++) {
   if (i < 6) {
@@ -17,8 +17,8 @@ for (i = 0; i < totalLetters; i++) {
   }
 }
 
-let title = document.querySelectorAll("span");
-let textArray = Array.from("COLOR SQUARES");
+const title = document.querySelectorAll("span");
+const textArray = Array.from("COLOR SQUARES");
 
 for (i = 0; i < textArray.length; i++) {
   let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -27,7 +27,7 @@ for (i = 0; i < textArray.length; i++) {
   title[i].style.textShadow = "0px 0px 8px" + color;
 }
 
-let allSquares = document.querySelectorAll(".square");
+const allSquares = document.querySelectorAll(".square");
 
 for (i = 0; i < allSquares.length; i++) {
   allSquares[i].onmouseover = function mouseOver () {
